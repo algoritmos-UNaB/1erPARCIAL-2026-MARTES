@@ -1,0 +1,1 @@
+potencias = {1 / (3 ** n) for n in range(10)}
