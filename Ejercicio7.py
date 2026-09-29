@@ -64,6 +64,7 @@ comic3 = Comic(
     15
 )
 
+
 print(comic1)
 
 print(comic1 == comic2)
