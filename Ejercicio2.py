@@ -1,5 +1,4 @@
 class Biblioteca():
-    # EJERCICIO 2 #
     def __init__(self):
         # Crea una biblioteca vacia
         self._libros = []
@@ -24,7 +23,6 @@ class Biblioteca():
         # Visualizar elementos de la biblioteca
         return f"Biblioteca: {self._libros}"
 
-    # EJERCICIO 3 #
     def leer_primer_libro(self):
         # Retorna el primer libro de la lista
         if self.esta_vacia():
@@ -47,3 +45,17 @@ class Biblioteca():
         # Agrega un libro al final de la biblioteca
         self._libros.append(libro)
 
+    def __len__(self):
+
+        return len(self._libros)
+
+    def __eq__(self, otra):
+        # 2 bibliotecas son iguales si contienen los mismos libros
+        if isinstance(otra, Biblioteca):
+            return set(self._libros) == set(otra._libros)
+        return False
+
+    def __add__(self, otra: "Biblioteca"):
+    # Crear una nueva biblioteca fusionando otras 2
+        libros_nuevos = self._libros + otra._libros
+        return Biblioteca(libros_nuevos)
