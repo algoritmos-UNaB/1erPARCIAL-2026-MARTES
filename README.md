@@ -121,10 +121,10 @@ La clase debe contener métodos para facilitar:
 ### Por Favor Completar sus Datos
 
 
-<u>**Nombre y Apellido:**</u>
+<u>**Nombre y Apellido:**</u> Brenda Amarilla Mancuello
 
-<u>**Email:**</u>
+<u>**Email:**</u> mabelmancuello95@gmail.com
 
-<u>**Comisión:**</u>
+<u>**Comisión:**</u> 3
 
 ---
