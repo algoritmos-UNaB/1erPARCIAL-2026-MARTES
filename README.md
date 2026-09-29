@@ -121,10 +121,10 @@ La clase debe contener métodos para facilitar:
 ### Por Favor Completar sus Datos
 
 
-<u>**Nombre y Apellido:**</u>
+<u>**Nombre y Apellido:**</u> Kain Ramsay Samaniego
 
-<u>**Email:**</u>
+<u>**Email:**</u> samaniego.py04@gmail.com
 
-<u>**Comisión:**</u>
+<u>**Comisión:**</u> 1
 
 ---

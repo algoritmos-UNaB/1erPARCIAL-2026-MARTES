@@ -1,1 +1,1 @@
-ddddd
+potencia_tres = {0 if k >= 10 else 1 / (3 ** k) for k in range(11)}
