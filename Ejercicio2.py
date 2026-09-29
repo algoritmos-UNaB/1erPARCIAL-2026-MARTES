@@ -1,7 +1,10 @@
+from Ejercicio10 import ListaEnlazada
+
 class Biblioteca():
     def __init__(self):
         # Crea una biblioteca vacia
         self._libros = []
+        self._libros = ListaEnlazada()
 
     # Identifica si la biblioteca se encuentra vacia
     def esta_vacia(self):
@@ -25,6 +28,11 @@ class Biblioteca():
             raise IndexError(f"La biblioteca esta vacia")
         else:
             return self._libros[0]
+            
+        if self._libros.header:
+            return self._libros.header._elem
+        else:
+            return None
     
     def leer_ultimo_libro(self):
     # Retorna el ultimo libro de la lista

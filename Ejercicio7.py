@@ -17,7 +17,7 @@ class Comic():
         if stock is not None:
             self.stock = int(stock)
 
-    def dias_publ_comic(self, fecha_referencia: date)
+    def dias_publ_comic(self, fecha_referencia: date):
     # Calcula si un comic es mas antiguo o no, a partir de una fecha de referencia
         if self.fecha_publicacion < fecha_referencia:
             self.stock = 0
@@ -30,7 +30,7 @@ class Comic():
     
     def __str__(self):
         # Representar comic de forma legible
-        return f"Comic: {self.titulo} | ID: {self.id_comic} | Precio: ${self.precio} | Stock: {self.stock}")
+        return f"Comic: {self.titulo} | ID: {self.id_comic} | Precio: ${self.precio} | Stock: {self.stock}"
     
     def __eq__(self, otro):
         # Compara si dos comics son iguales
