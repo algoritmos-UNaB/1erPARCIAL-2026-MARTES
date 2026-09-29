@@ -25,3 +25,9 @@ class Comic:
             self.stock = 0
 
         return dias
+
+        def __str__(self):
+        return f"Comic: {self.titulo} | ID: {self.id_comic} | Precio: ${self.precio} | Stock: {self.stock}"
+
+    def __eq__(self, otro):
+        return self.id_comic == otro.id_comic and self.titulo == otro.titulo
