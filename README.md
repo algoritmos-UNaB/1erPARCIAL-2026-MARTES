@@ -122,9 +122,12 @@ La clase debe contener métodos para facilitar:
 
 
 <u>**Nombre y Apellido:**</u>
+<u>Eber garcia</u>
 
 <u>**Email:**</u>
+<u>zickdante2015@gmail.com</u>
 
 <u>**Comisión:**</u>
+<u>3</u>
 
 ---
