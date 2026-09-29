@@ -26,14 +26,34 @@ class Biblioteca:
     def agregar_al_final(self, libro):
         self.libros.append(libro)
 
+    
 
-# Ejemplo de uso
-b = Biblioteca()
+    def __len__(self):
+        return len(self.libros)
 
-b.insertar_al_principio("Don Quijote")
-b.agregar_al_final("El Señor de los Anillos")
-b.agregar_al_final("1984")
+    def __str__(self):
+        return str(self.libros)
 
-print(b.leer_primer_libro())  # Don Quijote
-print(b.leer_ultimo_libro())  # 1984
-print(b.libros)
+    def __eq__(self, otra):
+        return self.libros == otra.libros
+
+    def __add__(self, otra):
+        nueva = Biblioteca()
+        nueva.libros = self.libros + otra.libros
+        return nueva
+
+
+
+b1 = Biblioteca()
+b1.agregar_al_final("Don Quijote")
+b1.agregar_al_final("1984")
+
+b2 = Biblioteca()
+b2.agregar_al_final("El Hobbit")
+
+
+
+print(len(b1))          
+print(b1 == b2)        
+b3 = b1 + b2
+print(b3)              
