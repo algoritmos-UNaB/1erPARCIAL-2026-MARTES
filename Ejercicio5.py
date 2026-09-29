@@ -4,10 +4,11 @@
 # notas
 # Pide un bucle, que vaya recorriendo y contando los objetos de la lista/ biblioteca
 
-def contar_libros(biblioteca):
+def contar_leonard(biblioteca):
     n_libros = 0
 
     for libro in biblioteca.libros:
         n_libros = n_libros + 1
     return n_libros
+    
 
