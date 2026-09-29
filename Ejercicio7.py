@@ -21,3 +21,11 @@ class comic:
         else:
             diferencia= self.fecha_publicacion - fecha_referencia
             return diferencia.days 
+    #ejercicio 8
+    def __str__(self):
+        return f"Comic: {self.titulo} | ID:{self.id_comic} | Precio: ${self.precio} | Stock: {self.stock}"
+
+    def __eq__(self, otro_comic):
+        if isinstance(otro_comic, Comic):
+            return self.id_comic == otro_comic.id_comic and self.titulo == otro_comic.titulo
+        else: False
