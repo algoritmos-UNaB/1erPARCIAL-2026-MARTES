@@ -18,6 +18,15 @@
 #deberá informar al usuario y marcar el stock como 0.
 # condicion error, dentro de la funcion dias_publicacion
 
+###########################################################################
+#(2pt.) Ejercicio 8: La Etiqueta de los Comics (Sobrecarga de Métodos)
+#Sobrecargar los siguientes métodos en la clase Comic:
+
+#__str__: Para representar el cómic de forma legible (ej: "Comic: The Flash #1 | ID: 456 
+# | Precio: $5.99 | Stock: 25").
+#  es una cadena tipo registro
+#__eq__: Para comparar si dos cómics son iguales basándose en su id_comic y titulo.
+
 
 from datetime import date
 
@@ -45,3 +54,9 @@ class Comic:
             self.stock = 0
         
         return diferencia.days
+
+    def __str__(self):
+        return f"Comic: {self.titulo} | ID: {self.id_comic} | precio ${self.precio} | stock: {self.stock}"
+    
+    def __eq__(self, alt_comic):
+        return self.id_comic == alt_comic.id_comic and self.titulo == alt_comic.titulo
