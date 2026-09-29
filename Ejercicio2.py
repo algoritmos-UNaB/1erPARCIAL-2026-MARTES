@@ -52,7 +52,6 @@ b2 = Biblioteca()
 b2.agregar_al_final("El Hobbit")
 
 
-
 print(len(b1))          
 print(b1 == b2)        
 b3 = b1 + b2
