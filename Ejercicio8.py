@@ -27,5 +27,13 @@ class Comic:
             print(f"El cómic '{self.titulo}' (ID {self.id_comic} fue publicado hace {dias} días respecto a {fecha_referencia}. Stock marcado a 0.")
             self.stock = 0
         return dias
-    
-    
+
+    # Ejercicio 8:
+
+    def __str__(self):
+        return f"Comic: {self.titulo} | ID: {self.id_comic} | Precio: ${self.precio:.2f} | Stock: {self.stock}"
+
+    def __eq__(self, other):
+        if not isinstance(other, Comic):
+            return NotImplemented
+        return (self.id_comic == other.id_comic) and (self.titulo == other.titulo)

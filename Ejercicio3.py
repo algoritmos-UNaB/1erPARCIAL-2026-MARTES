@@ -31,26 +31,10 @@ class Biblioteca:
     def cantidad_libros(self):          # Cuantos libros hay.
         return len(self._libros)
     
-    def __len__(self):                  # Permite usar len(biblioteca) en vez de biblioteca.cantidad_libros().
-        return len(self.libros)
-
     def __str__(self):                  # Muestra el estado de la biblioteca.
         if self.esta_vacia():
             return "Biblioteca vacia."
         return "Biblioteca: " + ", ".join(self._libros)
 
-    def __eq__(self, otra):             # Permite comparar dos bibliotecas.         
-        if not isinstance(otra, Biblioteca):
-            return False
-        return self.libros == otra._libros
+    
 
-    def __add__(self, otra):            # Permite sumar dos bibliotecas.
-        nueva = Biblioteca()
-        nueva._libros = self._libros + otra._libros
-        return nueva
-
-def contar_libros_iterativo(Biblioteca):    # Ejercicio 5: cuenta la cantidad total de libros en una biblioteca.
-    contador = 0
-    for _ in biblioteca._libros:
-        contador += 1
-    return contador
