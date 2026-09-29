@@ -1,0 +1,1 @@
+potencias = {(1 / 3) ** i for i in range(1000)}
