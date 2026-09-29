@@ -28,4 +28,14 @@ class Comic():
             dias = (self.fecha_publicacion - fecha_referencia).days
             return dias
     
+    def __str__(self):
+        # Representar comic de forma legible
+        return f"Comic: {self.titulo} | ID: {self.id_comic} | Precio: ${self.precio} | Stock: {self.stock}")
+    
+    def __eq__(self, otro):
+        # Compara si dos comics son iguales
+        if isinstance(otro, Comic):
+            return self.id_comic == otro.id_comic and self.titulo == otro.titulo
+        else:
+            return False
     
